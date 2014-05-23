@@ -1,4 +1,4 @@
-define([], function(){
+define(['gemini-loader'], function(GEM){
 
   var support = {};
 
@@ -70,6 +70,7 @@ define([], function(){
   });
 
 
-  return support;
+  GEM.support = support;
+  return GEM;
 
 });
