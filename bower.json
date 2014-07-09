@@ -2,8 +2,5 @@
   "name": "gemini-support",
   "authors": [
     {"name": "Matt Rose", "email": "matt@mattrose.ca"}
-  ],
-  "dependencies": {
-    "gemini-loader": "ssh://git@stash.carpages.ca/gem/gemini-loader.git"
-  }
+  ]
 }

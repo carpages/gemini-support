@@ -1,4 +1,4 @@
-define(['gemini'], function(G){
+define([], function(){
 
   var support = {};
 
@@ -69,8 +69,6 @@ define(['gemini'], function(G){
             'placeholder' in document.createElement('textarea'));
   });
 
-
-  G.support = support;
-  return G;
+  return support;
 
 });
