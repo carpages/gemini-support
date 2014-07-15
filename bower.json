@@ -2,5 +2,9 @@
   "name": "gemini-support",
   "authors": [
     {"name": "Matt Rose", "email": "matt@mattrose.ca"}
-  ]
+  ],
+  "main": [
+    "gemini.support.js"
+  ],
+  "ignore": []
 }
