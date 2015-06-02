@@ -6,5 +6,11 @@
   "main": [
     "gemini.support.js"
   ],
-  "ignore": []
+  "ignore": [
+    "test"
+  ],
+  "devDependencies": {
+    "requirejs": "~2.1.11"
+  }
 }
+
