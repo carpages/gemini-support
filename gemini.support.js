@@ -10,7 +10,7 @@
     // Browser globals
     factory();
   }
-}( function() {
+})( function() {
   var support = {};
 
   support.vendors = 'Khtml Ms O Moz Webkit';
@@ -51,7 +51,10 @@
   This function is from Modernizr - http://www.github.com/Modernizr/Modernizr/
   */
   support.checkSupport( 'touch', function() {
-    return !!(( 'ontouchstart' in window ) || window.DocumentTouch && document instanceof DocumentTouch );
+    return !!(
+      'ontouchstart' in window ||
+      ( window.DocumentTouch && document instanceof DocumentTouch )
+    );
   });
 
   /* CSS3 Columns
@@ -76,9 +79,11 @@
   */
 
   support.checkSupport( 'placeholder', function() {
-    return ( 'placeholder' in document.createElement( 'input' ) ||
-            'placeholder' in document.createElement( 'textarea' ));
+    return (
+      'placeholder' in document.createElement( 'input' ) ||
+      'placeholder' in document.createElement( 'textarea' )
+    );
   });
 
   return support;
-}));
+});
